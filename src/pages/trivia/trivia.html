@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- <ion-title>
+      <span >Home</span>
+    </ion-title> -->
+    <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <ion-icon name="notifications"></ion-icon>
+        </button>
+        <button ion-button tappable (click)="goToAccount()">
+          <ion-icon name="cog"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <ion-card>
+
+    <img class="user-avatar" src="../../assets/img/trivia-icon-3.png"/>
+
+    <ion-card-content>
+      <ion-card-title text-center>
+        W!SERFi Trivia
+      </ion-card-title>
+      <ion-card-title text-center>
+        Today 9PM
+        $10
+      </ion-card-title>
+      <p text-center>
+        Answer trivia for cash prizes
+      </p>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name='help' item-start style="color: #d03e84"></ion-icon>
+       Unlock Badges
+      <ion-badge item-end>9</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      
+      Follow Us
+      <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+      <ion-icon name='logo-facebook' item-start style="color: #55acee"></ion-icon>
+      
+    </ion-item>
+
+  </ion-card>
+
+</ion-content>
+

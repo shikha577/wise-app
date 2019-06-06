@@ -9,6 +9,8 @@ import { LandingPage } from "../pages/landing/landing";
 import { LoginPage } from "../pages/login/login";
 import {LearnFeedPage} from "../pages/learn-feed/learn-feed"
 import { PracticePage } from "../pages/practice/practice";
+import { TriviaPage } from "../pages/trivia/trivia";
+
 
 export interface MenuItem {
     title: string;
@@ -38,7 +40,7 @@ export class MyApp {
     this.appMenuItems = [
       {title: 'Home', component: LearnFeedPage, icon: 'home'},
       {title: 'Practice test', component: PracticePage, icon: 'clipboard'},
-      {title: 'Trivia', component: PracticePage, icon: 'calendar'}
+      {title: 'Trivia', component: TriviaPage, icon: 'calendar'}
     ];
   }
 

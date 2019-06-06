@@ -1,0 +1,14 @@
+page-practice,
+.practice {
+}
+
+.user-avatar {
+    margin-left: 26%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10rem rgba(0,0,0,.25), 0 0 4rem rgba(255,255,255,.45);
+    img {
+      border-radius: 10%;
+    }
+  }

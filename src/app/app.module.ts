@@ -24,12 +24,9 @@ import {LearnFeedPage} from "../pages/learn-feed/learn-feed";
 import { QuestionsPage } from "../pages/questions/questions";
 import { ResultPage } from "../pages/result/result";
 import { PracticePage } from "../pages/practice/practice";
-// import services
-// end import services
-// end import services
+import { TriviaPage } from "../pages/trivia/trivia";
+import { AlumniRegisterPage } from "../pages/alumniregister/alumniregister";
 
-// import pages
-// end import pages
 
 @NgModule({
   declarations: [
@@ -39,10 +36,12 @@ import { PracticePage } from "../pages/practice/practice";
     LearnFeedPage,
     QuestionsPage,
     PracticePage,
+    TriviaPage,
     LoginPage,
     ResultPage,
     NotificationsPage,
     RegisterPage,
+    AlumniRegisterPage,
     SearchLocationPage
   ],
   imports: [
@@ -66,11 +65,13 @@ import { PracticePage } from "../pages/practice/practice";
     LandingPage,
     QuestionsPage,
     PracticePage,
+    TriviaPage,
     LoginPage,
     ResultPage,
     LearnFeedPage,
     NotificationsPage,
     RegisterPage,
+    AlumniRegisterPage,
     SearchLocationPage
   ],
   providers: [

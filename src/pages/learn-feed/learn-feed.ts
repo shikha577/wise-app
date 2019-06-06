@@ -5,6 +5,7 @@ import { QuestionsPage } from "../questions/questions";
 import { LearnService } from '../../services/learn.service';
 import { CategoryModel } from '../../services/learn.model';
 import { PracticePage} from "../practice/practice";
+import { TriviaPage} from "../trivia/trivia";
 
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
@@ -44,6 +45,10 @@ export class LearnFeedPage {
 
   openEducatorQues() {
     this.navCtrl.push(PracticePage);
+  }
+  
+  openTriviaPage() {
+    this.navCtrl.push(TriviaPage);
   }
 
   goToAccount() {
