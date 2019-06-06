@@ -35,7 +35,7 @@
   <div *ngIf="personType == educators">
     <h1 class="header">Programs and Services</h1>
 
-    <ion-card class="category-concept-card" [style.background-color]="'#0077ff'">
+    <ion-card class="category-concept-card" [style.background-color]="'#0077ff'" (click)="openEducatorQues()">
       <ion-card-header>
         <button ion-fab class="category-icon">
           <ion-icon name="md-book"></ion-icon>

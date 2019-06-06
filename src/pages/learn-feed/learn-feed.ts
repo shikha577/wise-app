@@ -4,6 +4,7 @@ import { isPresent } from 'ionic-angular/util/util';
 import { QuestionsPage } from "../questions/questions";
 import { LearnService } from '../../services/learn.service';
 import { CategoryModel } from '../../services/learn.model';
+import { PracticePage} from "../practice/practice";
 
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
@@ -39,6 +40,10 @@ export class LearnFeedPage {
 
   openQuestions(params) {
     this.navCtrl.push(QuestionsPage, params);
+  }
+
+  openEducatorQues() {
+    this.navCtrl.push(PracticePage);
   }
 
   goToAccount() {
