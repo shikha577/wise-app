@@ -7,6 +7,7 @@ import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 import { LoginPage } from "../login/login";
+import { PracticePage } from "../practice/practice"
 
 
 @Component({
@@ -26,6 +27,10 @@ export class LandingPage {
 
   login() {
     this.nav.push(LoginPage);
+  }
+
+  goToPracticePage() {
+    this.nav.push(PracticePage);
   }
 
   ionViewWillEnter() {

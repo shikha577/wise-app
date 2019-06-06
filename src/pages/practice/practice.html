@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <span>Home</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="currentQuestion" text-wrap>
+    <ion-card-header  text-wrap>
+        {{ currentQuestion.QuestionID }}
+        {{ currentQuestion.Question }}
+    </ion-card-header>
+
+    <ion-list radio-group>
+      <ion-item *ngFor = "let answer of currentQuestion.answers">
+        <ion-label>{{ answer.value }}</ion-label>
+        <ion-radio value="{{answer.id}}" (ionSelect)="selectedAnswer(currentQuestion.QuestionID, answer.id)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-label text-center>{{currentQuestionIndex}} / {{questions.length}}</ion-label>
+        <button *ngIf="!showSubmitButton" ion-button full (click)="next()" >Next</button>
+        <button *ngIf="showSubmitButton" ion-button full (click)="submit()" >Submit</button>
+    </ion-toolbar>
+</ion-footer>

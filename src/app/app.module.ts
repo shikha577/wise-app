@@ -30,6 +30,7 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {LearnFeedPage} from "../pages/learn-feed/learn-feed";
 import { QuestionsPage } from "../pages/questions/questions";
 import { ResultPage } from "../pages/result/result";
+import { PracticePage } from "../pages/practice/practice";
 // import services
 // end import services
 // end import services
@@ -45,6 +46,7 @@ import { ResultPage } from "../pages/result/result";
     LandingPage,
     LearnFeedPage,
     QuestionsPage,
+    PracticePage,
     HomePage,
     LoginPage,
     ResultPage,
@@ -76,6 +78,7 @@ import { ResultPage } from "../pages/result/result";
     CheckoutTripPage,
     LandingPage,
     QuestionsPage,
+    PracticePage,
     HomePage,
     LoginPage,
     ResultPage,
