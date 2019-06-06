@@ -7,8 +7,7 @@ import { CategoryModel } from '../../services/learn.model';
 
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
-import {TripsPage} from "../trips/trips";
-import {SearchLocationPage} from "../search-location/search-location";
+
 
 @Component({
   selector: 'learn-feed-page',

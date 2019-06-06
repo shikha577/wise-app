@@ -6,10 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
 
 import { LandingPage } from "../pages/landing/landing";
-import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import {LearnFeedPage} from "../pages/learn-feed/learn-feed"
-import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import { PracticePage } from "../pages/practice/practice";
 
 export interface MenuItem {

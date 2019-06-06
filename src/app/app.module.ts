@@ -10,23 +10,16 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
 import {ActivityService} from "../services/activity-service";
-import {TripService} from "../services/trip-service";
-import {WeatherProvider} from "../services/weather";
 import {LearnService} from "../services/learn.service";
 
 import {MyApp} from "./app.component";
 
 import { LandingPage } from "../pages/landing/landing";
 import {SettingsPage} from "../pages/settings/settings";
-import {CheckoutTripPage} from "../pages/checkout-trip/checkout-trip";
-import {HomePage} from "../pages/home/home";
 import {LoginPage} from "../pages/login/login";
 import {NotificationsPage} from "../pages/notifications/notifications";
 import {RegisterPage} from "../pages/register/register";
 import {SearchLocationPage} from "../pages/search-location/search-location";
-import {TripDetailPage} from "../pages/trip-detail/trip-detail";
-import {TripsPage} from "../pages/trips/trips";
-import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {LearnFeedPage} from "../pages/learn-feed/learn-feed";
 import { QuestionsPage } from "../pages/questions/questions";
 import { ResultPage } from "../pages/result/result";
@@ -42,20 +35,15 @@ import { PracticePage } from "../pages/practice/practice";
   declarations: [
     MyApp,
     SettingsPage,
-    CheckoutTripPage,
     LandingPage,
     LearnFeedPage,
     QuestionsPage,
     PracticePage,
-    HomePage,
     LoginPage,
     ResultPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
-    SearchLocationPage,
-    TripDetailPage,
-    TripsPage
+    SearchLocationPage
   ],
   imports: [
     BrowserModule,
@@ -75,28 +63,21 @@ import { PracticePage } from "../pages/practice/practice";
   entryComponents: [
     MyApp,
     SettingsPage,
-    CheckoutTripPage,
     LandingPage,
     QuestionsPage,
     PracticePage,
-    HomePage,
     LoginPage,
     ResultPage,
     LearnFeedPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
-    SearchLocationPage,
-    TripDetailPage,
-    TripsPage
+    SearchLocationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Keyboard,
     ActivityService,
-    TripService,
-    WeatherProvider,
     LearnService
   ]
 })

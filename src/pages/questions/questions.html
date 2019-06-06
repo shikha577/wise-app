@@ -17,12 +17,9 @@
     </ion-card-header>
 
     <ion-list radio-group>
-      <!-- <ion-list-header>
-          
-      </ion-list-header> -->
 
       <ion-item *ngFor = "let answer of question.answers">
-        <ion-label>{{ answer.value }}</ion-label>
+        <ion-label color="dark">{{ answer.value }}</ion-label>
         <ion-radio value="{{answer.id}}" (ionSelect)="selectedAnswer(question.QuestionID, answer.id)"></ion-radio>
       </ion-item>
     </ion-list>
