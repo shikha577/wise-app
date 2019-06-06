@@ -3,19 +3,61 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>
-      <span>Home</span>
-    </ion-title>
+    <!-- <ion-title>
+      <span >Home</span>
+    </ion-title> -->
+    <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <ion-icon name="notifications"></ion-icon>
+        </button>
+        <button ion-button tappable (click)="goToAccount()">
+          <ion-icon name="cog"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <div *ngIf="personType != educators">
     <h1 class="header">What would you like to learn?</h1>
 
-  <ion-card class="category-concept-card" [style.background-color]="category.background" *ngFor="let category of categories" (click)="openQuestions({ category: category })">
-    <ion-card-header>
-        <button ion-fab class="category-icon"><ion-icon name="{{category.icon}}"></ion-icon></button>
-      <h2 class="category-title">{{ category.title }}</h2>
-    </ion-card-header>
-  </ion-card>
+    <ion-card class="category-concept-card" [style.background-color]="category.background"
+      *ngFor="let category of categories" (click)="openQuestions({ category: category })">
+      <ion-card-header>
+        <button ion-fab class="category-icon">
+          <ion-icon name="{{category.icon}}"></ion-icon>
+        </button>
+        <h2 class="category-title">{{ category.title }}</h2>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <div *ngIf="personType == educators">
+    <h1 class="header">Programs and services</h1>
+
+    <ion-card class="category-concept-card" [style.background-color]="'#0077ff'">
+      <ion-card-header>
+        <button ion-fab class="category-icon">
+          <ion-icon name="ios-card"></ion-icon>
+        </button>
+        <h2 class="category-title">Take practice test</h2>
+      </ion-card-header>
+    </ion-card>
+    <ion-card class="category-concept-card" [style.background-color]="'#F84C61'">
+        <ion-card-header>
+          <button ion-fab class="category-icon">
+            <ion-icon name="ios-card"></ion-icon>
+          </button>
+          <h2 class="category-title">Events and training</h2>
+        </ion-card-header>
+      </ion-card>
+      <ion-card class="category-concept-card" [style.background-color]="'#16144A'">
+          <ion-card-header>
+            <button ion-fab class="category-icon">
+              <ion-icon name="ios-card"></ion-icon>
+            </button>
+            <h2 class="category-title">Trivia</h2>
+          </ion-card-header>
+        </ion-card>
+  </div>
 </ion-content>

@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
+import {NavController, AlertController, NavParams, ToastController, MenuController} from "ionic-angular";
 import {HomePage} from "../home/home";
 import {RegisterPage} from "../register/register";
 import {LandingPage} from "../landing/landing";
@@ -10,9 +10,12 @@ import {LearnFeedPage} from "../learn-feed/learn-feed";
   templateUrl: 'login.html'
 })
 export class LoginPage {
-
-  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
+  personType: string;
+  constructor(public nav: NavController,
+    public navParams: NavParams,
+    public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
+    this.personType = navParams.get('personType');
   }
 
   // go to register page
@@ -26,7 +29,9 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    this.nav.setRoot(LearnFeedPage);
+    this.nav.setRoot(LearnFeedPage, {
+      personType: this.personType
+    });
   }
 
   forgotPass() {

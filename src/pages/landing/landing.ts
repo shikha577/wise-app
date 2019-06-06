@@ -25,8 +25,10 @@ export class LandingPage {
   constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
   }
 
-  login() {
-    this.nav.push(LoginPage);
+  login(personType) {
+    this.nav.push(LoginPage, {
+      personType: personType
+    });
   }
 
   goToPracticePage() {

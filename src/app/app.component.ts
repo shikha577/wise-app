@@ -8,7 +8,9 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { LandingPage } from "../pages/landing/landing";
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
+import {LearnFeedPage} from "../pages/learn-feed/learn-feed"
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
+import { PracticePage } from "../pages/practice/practice";
 
 export interface MenuItem {
     title: string;
@@ -36,8 +38,9 @@ export class MyApp {
     this.initializeApp();
 
     this.appMenuItems = [
-      {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
+      {title: 'Home', component: LearnFeedPage, icon: 'home'},
+      {title: 'Practice test', component: PracticePage, icon: 'clipboard'},
+      {title: 'Trivia', component: PracticePage, icon: 'calendar'}
     ];
   }
 
