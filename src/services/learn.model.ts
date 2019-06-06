@@ -4,4 +4,5 @@ export class CategoryModel {
   description: string;
   background: string;
   tags: Array<string>;
+  icon: string;
 }
