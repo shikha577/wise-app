@@ -1,0 +1,92 @@
+{
+   "questions":[
+      {
+         "Question":{
+            "QuestionID":"1",
+            "Question":"The government provides a pension for people when they retire.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"1",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"2",
+            "Question":"Health and disability insurance are on the top of the ladder for buying insurance.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"2",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"3",
+            "Question":"A gift card charges interest each month.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"1",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"4",
+            "Question":"A person who is 25 years old should save a minimum of 35% of his pretax income each paycheck.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"2",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"5",
+            "Question":"A credit card is associated with borrowing.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"1",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"6",
+            "Question":"A person with a credit score of 722 is likely to be approved for a lower interest rate loan.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"2",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"7",
+            "Question":"Mutual fund prices cannot decrease.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"1",
+            "Rationale":""
+          }
+      },
+      {
+         "Question":{
+            "QuestionID":"8",
+            "Question":"If a person needs to borrow and repay over time, it is best to use a credit card.",
+            "Answer":"1. True|2. False",
+            "TopicCode":"practice",
+            "Difficulty":"M",
+            "CorrectAnswer":"1",
+            "Rationale":""
+          }
+      }
+   ]
+}

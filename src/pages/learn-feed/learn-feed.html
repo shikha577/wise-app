@@ -10,24 +10,12 @@
 </ion-header>
 
 <ion-content>
-  <h3 class="search-query">
-    <span class="query-explanation">W!se is an award-winning national educational non-profit dedicated to improving lives through programs that develop financial literacy and readiness for college and careers. </span>
-  </h3>
-  <h4 id="home-heading4" style="color:#39A1DB;font-weight:400;text-align:center;">
-    What would you like to learn?</h4>
+    <h1 class="header">What would you like to learn?</h1>
 
   <ion-card class="category-concept-card" [style.background-color]="category.background" *ngFor="let category of categories" (click)="openQuestions({ category: category })">
     <ion-card-header>
-      <ion-icon name="category.icon" slot="start"></ion-icon>
+        <button ion-fab class="category-icon"><ion-icon name="{{category.icon}}"></ion-icon></button>
       <h2 class="category-title">{{ category.title }}</h2>
     </ion-card-header>
-    <ion-card-content>
-
-      <ion-row>
-        <ion-col no-padding>
-          <ion-badge class="category-tag" *ngFor="let tag of category.tags" item-right>{{ tag.name }}</ion-badge>
-        </ion-col>
-      </ion-row>
-    </ion-card-content>
   </ion-card>
 </ion-content>

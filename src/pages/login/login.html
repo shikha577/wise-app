@@ -6,7 +6,7 @@
     <div padding-horizontal text-center class="animated fadeInDown">
       <div class="logo"></div>
       <h2 ion-text class="text-primary">
-        <strong>Ionic 3</strong> Start Theme
+        <strong>W!SErFi</strong>
       </h2>
     </div>
 
@@ -32,43 +32,20 @@
     <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
 
     <div>
-      <button ion-button icon-start block color="dark" tappable (click)="login()">
+      <button ion-button icon-start block tappable (click)="login()">
         <ion-icon name="log-in"></ion-icon>
         SIGN IN
       </button>
-
-      <p text-center ion-text color="secondary">Or Sign in with:</p>
-
-      <ion-grid>
-        <ion-row>
-          <ion-col col-4>
-            <button ion-button icon-only block class="btn-facebook">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-only block class="btn-twitter">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-only block class="btn-gplus">
-              <ion-icon name="logo-googleplus"></ion-icon>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
     </div>
 
 
     <!-- Other links -->
     <div text-center margin-top>
-      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>
+      <span ion-text tappable (click)="register()">New here? <strong>Sign up</strong></span>
     </div>
 
     <div text-center margin-top>
-      <span ion-text color="secondary" tappable (click)="selectUserType()"><strong>Login as other user</strong></span>
+      <span ion-text class="font-color" tappable (click)="selectUserType()"><strong>Login as other user</strong></span>
     </div>
 
   </div>
