@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <span>Home</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card text-wrap *ngFor = "let question of questions">
+    <ion-card-header text-wrap>
+        {{ question.QuestionID }}
+        {{ question.Question }}
+    </ion-card-header>
+
+    <ion-list radio-group>
+      <!-- <ion-list-header>
+          
+      </ion-list-header> -->
+
+      <ion-item *ngFor = "let answer of question.answers">
+        <ion-label>{{ answer }}</ion-label>
+        <ion-radio value="{{answer}}"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <button ion-button full (click)="submit()" >Submit</button>
+</ion-content>

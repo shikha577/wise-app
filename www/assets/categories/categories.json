@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "slug": "PRACTICE_TEST",
+      "title": "Making Personal Finance Decisions",
+      "background": "#0077ff",
+      "tags": [
+        {
+          "name": "The lesson starts with an overview of the decision-making process followed by a discussion of various internal and external factors that affect decisions."
+        }
+      ]
+    },
+    {
+      "slug": "SAVING-INVESTING",
+      "title": "Saving and Investing",
+      "background": "#F84C61",
+      "tags":[
+        {
+          "name": "The process starts with setting financial goals."
+        }
+      ]
+    },
+    {
+      "slug": "COLLEGE-COST",
+      "title": "The Cost of College",
+      "background": "#16144A",
+      "tags": [
+        {
+            "name": "Check out here to help you find a college you can afford to attend."
+        }
+      ]
+    }
+  ]
+}
